@@ -34,7 +34,8 @@ const sendError = (err,res) =>{
 
         res.status(500).json({
             status:'error',
-            message:'Something went very wrong!'
+            message:err,
+            
         })
     }
 }
