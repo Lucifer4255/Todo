@@ -1,7 +1,7 @@
 const Note = require('./../models/noteModel');
 const APIFeatures = require('./../utils/apiFeatures');
 const catchAsync = require('./../utils/catchAsync');
-const AppError = require('./../utils/appError');
+const AppError = require('../utils/AppError');
 //get all Notes
 exports.getAllNotes = catchAsync(async (req, res, next) => {
     const features = new APIFeatures(Note.find(), req.query)

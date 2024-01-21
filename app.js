@@ -2,7 +2,7 @@ const express = require('express');
 
 const userRouter = require('./routes/userRoutes');
 const noteRouter = require('./routes/noteRoutes');
-const AppError = require('./utils/appError');
+const AppError = require('./utils/AppError');
 const globalErrorHandler = require('./controllers/errorController');
 
 var cors = require('cors');
